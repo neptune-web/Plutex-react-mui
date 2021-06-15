@@ -39,7 +39,7 @@ const Home = () => {
             </Grid>
           </Grid>
           <Grid container justify="space-between">
-            <Grid item xs={12} md={6} lg={6}>
+            <Grid item xs={12} md={12} lg={6}>
               <Box display="block" justifyContent="flex-start">
                 <Typography className={classes.title}>#PLTX JUST ARRIVED</Typography>
                 <Box className={classes.mt30}>
@@ -55,13 +55,15 @@ const Home = () => {
                     viverra nunc condimentum at. Phasellus viverra lacinia dui, a vulputate eros luctus ultricies.
                   </Typography>
                 </Box>
-                <Box className={classes.mt50}>
-                  <Button title="white paper" />
+                <Box className={classes.my50}>
+                  <Button title="white paper" color="yellow" />
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} md={6} lg={5}>
-              <ICOPresaleCard />
+            <Grid item xs={12} md={12} lg={5}>
+              <Box width={1} display="flex" justifyContent="center">
+                <ICOPresaleCard />
+              </Box>
             </Grid>
           </Grid>
         </Box>

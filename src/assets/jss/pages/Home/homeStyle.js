@@ -47,8 +47,9 @@ const homeStyle = {
   mt30: {
     marginTop: '30px',
   },
-  mt50: {
+  my50: {
     marginTop: '50px',
+    marginBottom: '50px',
   },
   content: {
     color: 'rgba(171, 222, 255, 1)',

@@ -10,10 +10,10 @@ import styles from 'assets/jss/components/Button/buttonStyle'
 const useStyles = makeStyles(styles)
 
 const PTButton = props => {
-  const { title } = props
+  const { title, color } = props
   const classes = useStyles()
 
-  return <Button className={classes.button}>{title}</Button>
+  return <Button className={color === 'yellow' ? classes.yellowButton : classes.grayButton}>{title}</Button>
 }
 
 export default PTButton
