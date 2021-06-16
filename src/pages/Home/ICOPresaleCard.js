@@ -95,7 +95,6 @@ const ICOPresaleCard = () => {
     }
   }, [presaleEndTime, now])
 
-  console.log('display time', displayEndTime)
   return (
     <Box width={1} display="flex" justifyContent="center" className={classes.container}>
       <Hidden smDown implementation="css">
