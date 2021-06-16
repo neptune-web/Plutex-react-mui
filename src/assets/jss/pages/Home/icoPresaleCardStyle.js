@@ -15,9 +15,23 @@ const icoPresaleCardStyle = {
     maxWidth: '475px',
     minWidth: '475px',
   },
+  pinkBG: {
+    position: 'absolute',
+    top: 0,
+    left: '-15px',
+    width: 'calc(100% + 30px)',
+    height: '100%',
+    borderRadius: '16px',
+    backgroundImage: 'radial-gradient(54.96% 46.21% at 50.01% 50.02%, #3D0387 0%, #801EDE 100%)',
+  },
   cardContent: {
     zIndex: 1,
-    width: 'calc(100% - 90px)',
+    '@media (max-width: 768px)': {
+      width: '100%',
+    },
+    '@media (min-width: 768px)': {
+      width: 'calc(100% - 90px)',
+    },
   },
   title: {
     fontFamily: 'Exo',

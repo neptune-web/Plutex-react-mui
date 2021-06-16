@@ -1,7 +1,7 @@
 import React from 'react'
 
 // material ui core components
-import { Box, LinearProgress, Typography } from '@material-ui/core'
+import { Box, Hidden, LinearProgress, Typography } from '@material-ui/core'
 
 // core components
 import Button from 'components/Button/Button'
@@ -36,9 +36,74 @@ const BorderLinearProgress = withStyles(() => ({
 const ICOPresaleCard = () => {
   const classes = useStyles()
 
+  // variables
+  const [presaleEndTime, setPresaleEndTime] = React.useState(0)
+  const [now, setNow] = React.useState(0)
+  const [displayEndTime, setDisplayEndTime] = React.useState({
+    days: '',
+    hours: '',
+    minutes: '',
+    seconds: '',
+  })
+
+  React.useEffect(() => {
+    setPresaleEndTime(1626794093628)
+    setNow(Date.now())
+  }, [])
+
+  React.useEffect(() => {
+    let count = 0
+    if (presaleEndTime !== 0 && now !== 0) {
+      setInterval(() => {
+        let obj = {}
+        var delta = Math.abs(presaleEndTime - now - count * 1000) / 1000
+        var days = Math.floor(delta / 86400)
+        obj.days = days
+        delta -= days * 86400
+        var hours = Math.floor(delta / 3600) % 24
+        obj.hours = hours
+        delta -= hours * 3600
+        var minutes = Math.floor(delta / 60) % 60
+        obj.minutes = minutes
+        delta -= minutes * 60
+        var seconds = Math.floor(delta % 60)
+        obj.seconds = seconds
+        let temp = {}
+        if (obj.days > 9) {
+          temp.days = obj.days.toString()
+        } else {
+          temp.days = '0' + obj.days.toString()
+        }
+        if (obj.hours > 9) {
+          temp.hours = obj.hours.toString()
+        } else {
+          temp.hours = '0' + obj.hours.toString()
+        }
+        if (obj.minutes > 9) {
+          temp.minutes = obj.minutes.toString()
+        } else {
+          temp.minutes = '0' + obj.minutes.toString()
+        }
+        if (obj.seconds > 9) {
+          temp.seconds = obj.seconds.toString()
+        } else {
+          temp.seconds = '0' + obj.seconds.toString()
+        }
+        setDisplayEndTime(temp)
+        count++
+      }, 1000)
+    }
+  }, [presaleEndTime, now])
+
+  console.log('display time', displayEndTime)
   return (
     <Box width={1} display="flex" justifyContent="center" className={classes.container}>
-      <img src={ICOPresaleCardImg} className={classes.icoPresaleCard} />
+      <Hidden smDown implementation="css">
+        <img src={ICOPresaleCardImg} className={classes.icoPresaleCard} />
+      </Hidden>
+      <Hidden mdUp implementation="css">
+        <Box className={classes.pinkBG}></Box>
+      </Hidden>
       <Box className={classes.cardContent}>
         <Box width={1} display="flex" justifyContent="center">
           <Typography className={classes.title}>ICO PRE-SALE IS LIVE</Typography>
@@ -55,7 +120,7 @@ const ICOPresaleCard = () => {
               <img src={BoardImg} />
             </Box>
           </Box>
-          <Box item xs={3}>
+          <Box>
             <Box display="flex" justifyContent="center">
               <Typography className={classes.text20}>Hours</Typography>
             </Box>
@@ -63,7 +128,7 @@ const ICOPresaleCard = () => {
               <img src={BoardImg} />
             </Box>
           </Box>
-          <Box item xs={3}>
+          <Box>
             <Box display="flex" justifyContent="center">
               <Typography className={classes.text20}>Minutes</Typography>
             </Box>
@@ -71,7 +136,7 @@ const ICOPresaleCard = () => {
               <img src={BoardImg} />
             </Box>
           </Box>
-          <Box item xs={3}>
+          <Box>
             <Box display="flex" justifyContent="center">
               <Typography className={classes.text20}>Seconds</Typography>
             </Box>
