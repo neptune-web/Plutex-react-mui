@@ -63,10 +63,12 @@ const homeStyle = {
     position: 'relative',
     width: '100%',
     height: '100%',
-    // opacity: '0.8',
     backgroundImage: 'url(' + ICOPresaleCard + ')',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
+  },
+  planet: {
+    width: '100%',
   },
 }
 

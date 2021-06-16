@@ -1,7 +1,7 @@
 import React from 'react'
 
 // material ui core components
-import { Box, Grid } from '@material-ui/core'
+import { Box, Grid, Hidden } from '@material-ui/core'
 
 // core components
 import Header from 'components/Header/Header'
@@ -9,6 +9,11 @@ import HeaderLinks from 'components/Header/HeaderLinks'
 import Button from 'components/Button/Button'
 import ICOPresaleCard from 'pages/Home/ICOPresaleCard'
 import Footer from 'components/Footer/Footer'
+
+// images
+import Planet from 'assets/images/Home/Planet.png'
+import Rocket from 'assets/images/Home/Rocket.png'
+import Stones02 from 'assets/images/Home/Stones02.png'
 
 // styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -67,6 +72,23 @@ const Home = () => {
             </Grid>
           </Grid>
         </Box>
+        <Grid container justify="space-between">
+          <Grid item xs={12} md={12} lg={12}>
+            <Box display="flex" justifyContent="space-between" alignItems="flex-start" width={1}>
+              <Box display="flex" alignItems="center">
+                <img src={Planet} className={classes.planet} />
+                <Hidden mdDown implementation="css">
+                  <img src={Rocket} />
+                </Hidden>
+              </Box>
+              <Box>
+                <Hidden mdDown implementation="css">
+                  <img src={Stones02} />
+                </Hidden>
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
       </Box>
       <Footer />
     </Box>
