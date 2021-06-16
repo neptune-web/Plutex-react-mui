@@ -7,12 +7,12 @@ import { Box, Hidden, LinearProgress, Typography } from '@material-ui/core'
 import Button from 'components/Button/Button'
 
 // images
-import ICOPresaleCardImg from 'assets/images/Home/ICOPresaleCard.svg'
-import BoardImg from 'assets/images/Home/Board.svg'
+import ICOPresaleCardImg from 'assets/images/Presale/ICOPresaleCard.svg'
+import BoardImg from 'assets/images/Presale/Board.svg'
 
 // styles
 import { makeStyles, withStyles } from '@material-ui/core/styles'
-import styles from 'assets/jss/pages/Home/icoPresaleCardStyle'
+import styles from 'assets/jss/pages/Presale/icoPresaleCardStyle'
 
 const useStyles = makeStyles(styles)
 
