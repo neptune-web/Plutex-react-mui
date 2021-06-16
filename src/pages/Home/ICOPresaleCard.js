@@ -188,7 +188,9 @@ const ICOPresaleCard = () => {
         </Box>
         <Box width={1} display="flex" justifyContent="space-between">
           <Button title="connect wallet" color="yellow" />
-          <Button title="buy tokens" color="gray" />
+          <Box ml={1}>
+            <Button title="buy tokens" color="gray" />
+          </Box>
         </Box>
       </Box>
     </Box>

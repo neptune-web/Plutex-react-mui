@@ -77,7 +77,7 @@ const Home = () => {
             <Box display="flex" justifyContent="space-between" alignItems="flex-start" width={1}>
               <Box display="flex" alignItems="center">
                 <img src={Planet} className={classes.planet} />
-                <Hidden mdDown implementation="css">
+                <Hidden smDown implementation="css">
                   <img src={Rocket} />
                 </Hidden>
               </Box>
