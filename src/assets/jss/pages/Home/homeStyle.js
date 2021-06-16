@@ -43,6 +43,12 @@ const homeStyle = {
     fontWeight: 700,
     lineHeight: '58.46px',
     letterSpacing: '1.18px',
+    '@media (max-width: 960px)': {
+      marginTop: '100px',
+    },
+    '@media (min-width: 960px)': {
+      marginTop: '0px',
+    },
   },
   mt30: {
     marginTop: '30px',
@@ -67,8 +73,9 @@ const homeStyle = {
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
   },
-  planet: {
+  imgStyle: {
     width: '100%',
+    objectFit: 'cover',
   },
 }
 

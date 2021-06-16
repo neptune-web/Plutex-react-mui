@@ -11,8 +11,8 @@ import ICOPresaleCard from 'pages/Home/ICOPresaleCard'
 import Footer from 'components/Footer/Footer'
 
 // images
+import Stones01 from 'assets/images/Home/Stones01.png'
 import Planet from 'assets/images/Home/Planet.png'
-import Rocket from 'assets/images/Home/Rocket.png'
 import Stones02 from 'assets/images/Home/Stones02.png'
 
 // styles
@@ -39,7 +39,9 @@ const Home = () => {
           <Grid container>
             <Grid item xs={12}>
               <Box display="flex" justifyContent="center">
-                <Box className={classes.stone01Area}></Box>
+                <Hidden smDown implementation="css">
+                  <img src={Stones01} />
+                </Hidden>
               </Box>
             </Grid>
           </Grid>
@@ -65,6 +67,9 @@ const Home = () => {
                 </Box>
               </Box>
             </Grid>
+            <Hidden mdUp implementation="css">
+              <img src={Stones01} />
+            </Hidden>
             <Grid item xs={12} md={12} lg={5}>
               <Box width={1} display="flex" justifyContent="center">
                 <ICOPresaleCard />
@@ -72,23 +77,34 @@ const Home = () => {
             </Grid>
           </Grid>
         </Box>
-        <Grid container justify="space-between">
-          <Grid item xs={12} md={12} lg={12}>
-            <Box display="flex" justifyContent="space-between" alignItems="flex-start" width={1}>
-              <Box display="flex" alignItems="center">
-                <img src={Planet} className={classes.planet} />
-                <Hidden smDown implementation="css">
-                  <img src={Rocket} />
-                </Hidden>
+        <Hidden xsDown implementation="css">
+          <Grid container display="flex" justify="space-between">
+            <Grid item xs={6} md={6} lg={6}>
+              <Box display="flex" justifyContent="flex-end">
+                <img src={Planet} className={classes.imgStyle} />
               </Box>
-              <Box>
-                <Hidden mdDown implementation="css">
-                  <img src={Stones02} />
-                </Hidden>
+            </Grid>
+            <Grid item xs={6} md={5} lg={4}>
+              <Box width={1} display="flex" justifyContent="flex-end">
+                <img src={Stones02} className={classes.imgStyle} />
               </Box>
-            </Box>
+            </Grid>
           </Grid>
-        </Grid>
+        </Hidden>
+        <Hidden smUp implementation="css">
+          <Grid container>
+            <Grid item xs={12} md={6} lg={6}>
+              <Box width={1} display="flex" justifyContent="flex-start">
+                <img src={Stones02} className={classes.imgStyle} />
+              </Box>
+            </Grid>
+            <Grid item xs={11} md={6} lg={6}>
+              <Box display="flex" justifyContent="flex-end">
+                <img src={Planet} className={classes.imgStyle} />
+              </Box>
+            </Grid>
+          </Grid>
+        </Hidden>
       </Box>
       <Footer />
     </Box>
