@@ -35,7 +35,6 @@ const headerLinksStyle = theme => ({
     fontFamily: 'Source Sans Pro',
     fontWeight: 500,
     fontSize: '14px',
-    color: '#fff',
     lingHeight: '38px',
     letterSpacing: '0.26px',
     cursor: 'pointer',
