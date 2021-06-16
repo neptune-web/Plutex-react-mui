@@ -6,6 +6,9 @@ import { useHistory } from 'react-router-dom'
 // @material-ui/core components
 import { List, ListItem, Typography } from '@material-ui/core'
 
+// import context variables
+import { useNavigation } from 'hook/Context/NavigationContext'
+
 // styles
 import { makeStyles } from '@material-ui/core/styles'
 import styles from 'assets/jss/components/Header/headerLinksStyle.js'
@@ -17,32 +20,37 @@ const HeaderLinks = () => {
 
   const history = useHistory()
 
+  // context variables
+  const { navigation, setNavigation } = useNavigation()
+
   // handlers
   const handleGotoNav = path => {
-    history.push('home#' + path)
+    setNavigation(path)
+    history.push('home')
   }
   const handleGotoPresale = path => {
+    setNavigation(path)
     history.push(path)
   }
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem} onClick={() => handleGotoNav('ecosystem')}>
-        <Typography className={classes.text}>ECOSYSTEM</Typography>
+        <Typography className={navigation === 'ecosystem' ? classes.selectedText : classes.text}>ECOSYSTEM</Typography>
       </ListItem>
       <ListItem className={classes.listItem} onClick={() => handleGotoNav('buy')}>
-        <Typography className={classes.text}>BUY</Typography>
+        <Typography className={navigation === 'buy' ? classes.selectedText : classes.text}>BUY</Typography>
       </ListItem>
       <ListItem className={classes.listItem} onClick={() => handleGotoNav('plutexwap')}>
-        <Typography className={classes.text}>PLUTEXWAP</Typography>
+        <Typography className={navigation === 'plutexwap' ? classes.selectedText : classes.text}>PLUTEXWAP</Typography>
       </ListItem>
       <ListItem className={classes.listItem} onClick={() => handleGotoNav('launchpad')}>
-        <Typography className={classes.text}>LAUNCHPAD</Typography>
+        <Typography className={navigation === 'launchpad' ? classes.selectedText : classes.text}>LAUNCHPAD</Typography>
       </ListItem>
       <ListItem className={classes.listItem} onClick={() => handleGotoNav('community')}>
-        <Typography className={classes.text}>COMMUNITY</Typography>
+        <Typography className={navigation === 'community' ? classes.selectedText : classes.text}>COMMUNITY</Typography>
       </ListItem>
       <ListItem className={classes.listItem} onClick={() => handleGotoPresale('presale')}>
-        <Typography className={classes.text}>PRESALE</Typography>
+        <Typography className={navigation === 'presale' ? classes.selectedText : classes.text}>PRESALE</Typography>
       </ListItem>
     </List>
   )

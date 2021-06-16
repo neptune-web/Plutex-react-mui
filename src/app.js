@@ -1,12 +1,15 @@
 import React from 'react'
 import Routes from './routes'
 
+// context providers
+import NavigationContextProvider from 'hook/Context/NavigationContext'
+
 function App() {
   return (
     <div className="App">
-      <React.StrictMode>
+      <NavigationContextProvider>
         <Routes />
-      </React.StrictMode>
+      </NavigationContextProvider>
     </div>
   )
 }

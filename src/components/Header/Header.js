@@ -12,6 +12,9 @@ import MenuIcon from '@material-ui/icons/Menu'
 // images
 import brand from 'assets/images/logo.svg'
 
+// import context variables
+import { useNavigation } from 'hook/Context/NavigationContext'
+
 // styles
 import { makeStyles } from '@material-ui/core/styles'
 import styles from 'assets/jss/components/Header/headerStyle'
@@ -29,10 +32,17 @@ const Header = props => {
     [classes.fixed]: fixed,
   })
 
+  // context variables
+  const { navigation } = useNavigation()
+
   // variables
   const [mobileOpen, setMobileOpen] = React.useState(false)
 
   // handlers
+  React.useEffect(() => {
+    setMobileOpen(false)
+  }, [navigation])
+
   React.useEffect(() => {
     if (props.changeColorOnScroll) {
       window.addEventListener('scroll', headerColorChange)
