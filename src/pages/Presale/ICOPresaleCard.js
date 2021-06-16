@@ -37,6 +37,7 @@ const ICOPresaleCard = () => {
   const classes = useStyles()
 
   // variables
+  const [isMounted, setIsMounted] = React.useState(false)
   const [presaleEndTime, setPresaleEndTime] = React.useState(0)
   const [now, setNow] = React.useState(0)
   const [displayEndTime, setDisplayEndTime] = React.useState({
@@ -47,13 +48,15 @@ const ICOPresaleCard = () => {
   })
 
   React.useEffect(() => {
+    setIsMounted(true)
     setPresaleEndTime(1626794093628)
     setNow(Date.now())
+    return () => setIsMounted(false)
   }, [])
 
   React.useEffect(() => {
     let count = 0
-    if (presaleEndTime !== 0 && now !== 0) {
+    if (isMounted === true && presaleEndTime !== 0 && now !== 0) {
       setInterval(() => {
         let obj = {}
         var delta = Math.abs(presaleEndTime - now - count * 1000) / 1000
@@ -93,7 +96,7 @@ const ICOPresaleCard = () => {
         count++
       }, 1000)
     }
-  }, [presaleEndTime, now])
+  }, [isMounted, presaleEndTime, now])
 
   return (
     <Box width={1} display="flex" justifyContent="center" className={classes.container}>
