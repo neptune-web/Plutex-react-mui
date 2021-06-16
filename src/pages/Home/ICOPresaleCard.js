@@ -113,35 +113,59 @@ const ICOPresaleCard = () => {
         </Box>
         <Box width={1} display="flex" justifyContent="space-between" mb={3}>
           <Box>
-            <Box display="flex" justifyContent="center">
+            <Box display="flex" justifyContent="center" mb={1}>
               <Typography className={classes.text20}>Days</Typography>
             </Box>
-            <Box display="flex" justifyContent="center">
-              <img src={BoardImg} />
+            <Box className={classes.boardImageArea}>
+              <img src={BoardImg} className={classes.boardImg} />
+              <Box width={1 / 2} className={classes.boardContent}>
+                <Typography className={classes.text24}>{displayEndTime.days[0]}</Typography>
+              </Box>
+              <Box width={1 / 2} className={classes.boardContent}>
+                <Typography className={classes.text24}>{displayEndTime.days[1]}</Typography>
+              </Box>
             </Box>
           </Box>
           <Box>
-            <Box display="flex" justifyContent="center">
+            <Box display="flex" justifyContent="center" mb={1}>
               <Typography className={classes.text20}>Hours</Typography>
             </Box>
-            <Box display="flex" justifyContent="center">
-              <img src={BoardImg} />
+            <Box className={classes.boardImageArea}>
+              <img src={BoardImg} className={classes.boardImg} />
+              <Box width={1 / 2} className={classes.boardContent}>
+                <Typography className={classes.text24}>{displayEndTime.hours[0]}</Typography>
+              </Box>
+              <Box width={1 / 2} className={classes.boardContent}>
+                <Typography className={classes.text24}>{displayEndTime.hours[1]}</Typography>
+              </Box>
             </Box>
           </Box>
           <Box>
-            <Box display="flex" justifyContent="center">
+            <Box display="flex" justifyContent="center" mb={1}>
               <Typography className={classes.text20}>Minutes</Typography>
             </Box>
-            <Box display="flex" justifyContent="center">
-              <img src={BoardImg} />
+            <Box className={classes.boardImageArea}>
+              <img src={BoardImg} className={classes.boardImg} />
+              <Box width={1 / 2} className={classes.boardContent}>
+                <Typography className={classes.text24}>{displayEndTime.minutes[0]}</Typography>
+              </Box>
+              <Box width={1 / 2} className={classes.boardContent}>
+                <Typography className={classes.text24}>{displayEndTime.minutes[1]}</Typography>
+              </Box>
             </Box>
           </Box>
           <Box>
-            <Box display="flex" justifyContent="center">
+            <Box display="flex" justifyContent="center" mb={1}>
               <Typography className={classes.text20}>Seconds</Typography>
             </Box>
-            <Box display="flex" justifyContent="center">
-              <img src={BoardImg} />
+            <Box className={classes.boardImageArea}>
+              <img src={BoardImg} className={classes.boardImg} />
+              <Box width={1 / 2} className={classes.boardContent}>
+                <Typography className={classes.text24}>{displayEndTime.seconds[0]}</Typography>
+              </Box>
+              <Box width={1 / 2} className={classes.boardContent}>
+                <Typography className={classes.text24}>{displayEndTime.seconds[1]}</Typography>
+              </Box>
             </Box>
           </Box>
         </Box>
@@ -157,7 +181,7 @@ const ICOPresaleCard = () => {
           <Typography className={classes.text20}>Tokens Sold:</Typography>
         </Box>
         <Box width={1} display="flex" justifyContent="flex-start" mb={2}>
-          <BorderLinearProgress variant="determinate" value={85} />
+          <BorderLinearProgress variant="determinate" value={89.5} />
         </Box>
         <Box width={1} display="flex" justifyContent="space-between" mb={5}>
           <Typography className={classes.text20}>89.5% target raised</Typography>

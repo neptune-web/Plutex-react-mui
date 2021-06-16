@@ -47,6 +47,18 @@ const icoPresaleCardStyle = {
     marginBottom: '10px',
     color: '#fff',
   },
+  text24: {
+    fontFamily: 'Exo',
+    fontStyle: 'normal',
+    fontWeight: 700,
+    fontSize: '24px',
+    lineHeight: '54px',
+    display: 'flex',
+    alignItems: 'center',
+    letterSpacing: '1.08px',
+    textTransform: 'uppercase',
+    color: '#2E0568',
+  },
   text22: {
     fontFamily: 'Source Sans Pro',
     fontStyle: 'normal',
@@ -82,6 +94,29 @@ const icoPresaleCardStyle = {
     textAlign: 'center',
     letterSpacing: '0.46px',
     color: '#FFF',
+  },
+  boardImageArea: {
+    position: 'relative',
+    width: '74px',
+    height: '50px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  boardImg: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '74px',
+    height: '50px',
+  },
+  boardContent: {
+    zIndex: 1,
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 }
 
