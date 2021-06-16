@@ -32,9 +32,24 @@ const headerLinksStyle = theme => ({
     },
   },
   text: {
-    ...defaultFont,
+    fontFamily: 'Source Sans Pro',
+    fontWeight: 500,
     fontSize: '14px',
+    color: '#fff',
     lingHeight: '38px',
+    letterSpacing: '0.26px',
+    cursor: 'pointer',
+    '&:hover': {
+      color: '#E97800',
+    },
+  },
+  selectedText: {
+    fontFamily: 'Source Sans Pro',
+    fontWeight: 500,
+    fontSize: '14px',
+    color: '#E97800',
+    lingHeight: '38px',
+    letterSpacing: '0.26px',
     cursor: 'pointer',
   },
 })

@@ -24,9 +24,23 @@ const footerStyle = {
   text: {
     color: 'rgba(255, 255, 255, 1)',
     margin: '0px 20px',
+    fontFamily: 'Source Sans Pro',
     fontSize: '16px',
     fontWeight: 500,
     LineHeight: '41px',
+    cursor: 'pointer',
+    '&:hover': {
+      color: '#E97800',
+    },
+  },
+  selectedText: {
+    color: '#E97800',
+    margin: '0px 20px',
+    fontFamily: 'Source Sans Pro',
+    fontSize: '16px',
+    fontWeight: 500,
+    lingHeight: '41px',
+    letterSpacing: '0.26px',
     cursor: 'pointer',
   },
 }
