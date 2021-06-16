@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { useHistory } from 'react-router-dom'
+
 // nodejs library that concatenates classes
 import classNames from 'classnames'
 
@@ -32,8 +34,10 @@ const Header = props => {
     [classes.fixed]: fixed,
   })
 
+  const history = useHistory()
+
   // context variables
-  const { navigation } = useNavigation()
+  const { navigation, setNavigation } = useNavigation()
 
   // variables
   const [mobileOpen, setMobileOpen] = React.useState(false)
@@ -68,10 +72,15 @@ const Header = props => {
     }
   }
   const brandComponent = (
-    <Button className={classes.brand}>
+    <Button className={classes.brand} onClick={() => handleGotoHome()}>
       <img src={brand} />
     </Button>
   )
+
+  const handleGotoHome = () => {
+    setNavigation('home')
+    history.push('home')
+  }
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>

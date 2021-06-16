@@ -7,6 +7,7 @@ import { Box } from '@material-ui/core'
 import Header from 'components/Header/Header'
 import HeaderLinks from 'components/Header/HeaderLinks'
 import Footer from 'components/Footer/Footer'
+import HomeSection from 'pages/Home/HomeSection'
 
 // styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -27,6 +28,7 @@ const Home = () => {
         }}
       />
       <Box className={classes.body}>
+        <HomeSection />
         <Box className={classes.container}></Box>
       </Box>
       <Footer />
