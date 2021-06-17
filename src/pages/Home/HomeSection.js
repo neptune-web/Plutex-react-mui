@@ -3,6 +3,9 @@ import React from 'react'
 // material ui core components
 import { Box, Grid, Typography } from '@material-ui/core'
 
+// core components
+import Button from 'components/Button/Button'
+
 // images
 import PlanetImage from 'assets/images/Home/Planet.png'
 import StonesImage from 'assets/images/Home/Stones.png'
@@ -39,6 +42,9 @@ const HomeSection = () => {
                   Growing 440k+ Community
                   <br />& more on the horizon!
                 </Typography>
+              </Box>
+              <Box display="block" justifyContent="flex-start" alignItems="center" mb={3}>
+                <Button title="Read Our Woofpaper" color="yellow" />
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={6} lg={6}>
