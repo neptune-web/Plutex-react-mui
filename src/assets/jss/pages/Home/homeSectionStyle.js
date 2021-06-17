@@ -66,8 +66,16 @@ const homeSectionStyle = {
     letterSpacing: '0.65px',
     color: '#ABDEFF',
   },
+  buttonArea: {
+    '@media (max-width: 600px)': { display: 'flex', justifyContent: 'center' },
+    '@media (min-width: 600px)': { display: 'flex', justifyContent: 'center' },
+    '@media (min-width: 768px)': { display: 'flex', justifyContent: 'center' },
+    '@media (min-width: 960px)': { display: 'flex', justifyContent: 'flex-start' },
+    '@media (min-width: 1280px)': { display: 'flex', justifyContent: 'flex-start' },
+  },
   foxArea: {
     width: '100%',
+    zIndex: 1,
   },
   foxImage: {
     width: '100%',

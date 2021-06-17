@@ -29,7 +29,7 @@ const HomeSection = () => {
       <Box className={classes.container}>
         <Box className={classes.content}>
           <Grid container display="flex" alignItems="center">
-            <Grid item xs={12} sm={12} md={6} lg={6}>
+            <Grid item xs={12} sm={12} md={6} lg={6} className={classes.foxArea}>
               <Box mb={3}>
                 <Typography className={classes.title}>
                   Decentralized Meme Tokens that grew into a vibrant ecosystem
@@ -43,14 +43,12 @@ const HomeSection = () => {
                   <br />& more on the horizon!
                 </Typography>
               </Box>
-              <Box mb={3}>
+              <Box mb={3} className={classes.buttonArea}>
                 <Button title="Read Our Woofpaper" color="yellow" />
               </Box>
             </Grid>
-            <Grid item xs={12} sm={12} md={6} lg={6}>
-              <Box className={classes.foxArea}>
-                <img src={FoxImage} className={classes.foxImage} />
-              </Box>
+            <Grid item xs={12} sm={12} md={6} lg={6} className={classes.foxArea}>
+              <img src={FoxImage} className={classes.foxImage} />
             </Grid>
           </Grid>
         </Box>
