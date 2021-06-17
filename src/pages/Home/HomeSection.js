@@ -21,31 +21,33 @@ const HomeSection = () => {
         <img src={PlanetImage} className={classes.planetImage} />
       </Box>
       <Box>
-        <img src={StonesImage} className={classes.stonesArea} />
+        <img src={StonesImage} className={classes.stonesImage} />
       </Box>
       <Box className={classes.container}>
-        <Grid container display="flex" alignItems="center">
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <Box display="block" justifyContent="flex-start" alignItems="center" mb={3}>
-              <Typography className={classes.title}>
-                Decentralized Meme Tokens that grew into a vibrant ecosystem
-              </Typography>
-            </Box>
-            <Box display="block" justifyContent="flex-start" alignItems="center" mb={3}>
-              <Typography className={classes.text31}>
-                PLTXSwap. Fun tokens. Artist incubator.
-                <br />
-                Growing 440k+ Community
-                <br />& more on the horizon!
-              </Typography>
-            </Box>
+        <Box className={classes.content}>
+          <Grid container display="flex" alignItems="center">
+            <Grid item xs={12} sm={12} md={6} lg={6}>
+              <Box display="block" justifyContent="flex-start" alignItems="center" mb={3}>
+                <Typography className={classes.title}>
+                  Decentralized Meme Tokens that grew into a vibrant ecosystem
+                </Typography>
+              </Box>
+              <Box display="block" justifyContent="flex-start" alignItems="center" mb={3}>
+                <Typography className={classes.text31}>
+                  PLTXSwap. Fun tokens. Artist incubator.
+                  <br />
+                  Growing 440k+ Community
+                  <br />& more on the horizon!
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={12} md={6} lg={6}>
+              <Box className={classes.foxArea}>
+                <img src={FoxImage} className={classes.foxImage} />
+              </Box>
+            </Grid>
           </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <Box display="flex" justifyContent="flex-start" alignItems="center">
-              <img src={FoxImage} />
-            </Box>
-          </Grid>
-        </Grid>
+        </Box>
       </Box>
     </Box>
   )

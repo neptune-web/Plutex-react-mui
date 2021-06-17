@@ -18,7 +18,7 @@ const homeSectionStyle = {
     height: '100%',
     objectFit: 'cover',
   },
-  stonesArea: {
+  stonesImage: {
     zIndex: 0,
     position: 'absolute',
     bottom: 0,
@@ -29,18 +29,42 @@ const homeSectionStyle = {
   },
   container: {
     ...container,
-    display: 'block',
-    justifyContent: 'center',
-    position: 'relative',
+  },
+  content: {
     paddingTop: '96px',
-    paddingBottom: '200px',
+    '@media (min-width: 576px)': {
+      paddingBottom: '20px',
+    },
+    '@media (min-width: 768px)': {
+      paddingBottom: '60px',
+    },
+    '@media (min-width: 992px)': {
+      paddingBottom: '130px',
+    },
+    '@media (min-width: 1200px)': {
+      paddingBottom: '200px',
+    },
   },
   title: {
     zIndex: 1,
     fontFamily: 'Exo',
     fontWeight: 700,
-    fontSize: '50px',
-    lineHeight: '60px',
+    '@media (min-width: 576px)': {
+      fontSize: '30px',
+      lineHeight: '40px',
+    },
+    '@media (min-width: 768px)': {
+      fontSize: '35px',
+      lineHeight: '50px',
+    },
+    '@media (min-width: 992px)': {
+      fontSize: '45px',
+      lineHeight: '55px',
+    },
+    '@media (min-width: 1200px)': {
+      fontSize: '50px',
+      lineHeight: '60px',
+    },
     display: 'flex',
     alignItems: 'center',
     letterSpacing: '1.47px',
@@ -50,12 +74,32 @@ const homeSectionStyle = {
     fontFamily: 'Source Sans Pro',
     fontStyle: 'normal',
     fontWeight: 400,
-    fontSize: '31px',
-    lineHeight: '45px',
+    '@media (min-width: 576px)': {
+      fontSize: '16px',
+      lineHeight: '24px',
+    },
+    '@media (min-width: 768px)': {
+      fontSize: '20px',
+      lineHeight: '32px',
+    },
+    '@media (min-width: 992px)': {
+      fontSize: '26px',
+      lineHeight: '38px',
+    },
+    '@media (min-width: 1200px)': {
+      fontSize: '31px',
+      lineHeight: '45px',
+    },
     display: 'flex',
     alignItems: 'center',
     letterSpacing: '0.65px',
     color: '#ABDEFF',
+  },
+  foxArea: {
+    width: '100%',
+  },
+  foxImage: {
+    width: '100%',
   },
 }
 

@@ -29,7 +29,6 @@ const Home = () => {
       />
       <Box className={classes.body}>
         <HomeSection />
-        <Box className={classes.container}></Box>
       </Box>
       <Footer />
     </Box>
