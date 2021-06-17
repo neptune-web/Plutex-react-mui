@@ -135,6 +135,20 @@ const ecosystemSectionStyle = {
     '@media (min-width: 960px)': { width: 'calc(100% - 85px)' },
     '@media (min-width: 1280px)': { width: 'calc(100% - 85px)' },
   },
+  text20: {
+    fontFamily: 'Source Sans Pro',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    '@media (max-width: 600px)': { fontSize: '18px', lineHeight: '27px' },
+    '@media (min-width: 600px)': { fontSize: '18px', lineHeight: '27px' },
+    '@media (min-width: 768px)': { fontSize: '18px', lineHeight: '27px' },
+    '@media (min-width: 960px)': { fontSize: '20px', lineHeight: '30px' },
+    '@media (min-width: 1280px)': { fontSize: '20px', lineHeight: '30px' },
+    display: 'flex',
+    alignItems: 'center',
+    letterSpacing: '0.65px',
+    color: '#FFFFFF',
+  },
 }
 
 export default ecosystemSectionStyle
