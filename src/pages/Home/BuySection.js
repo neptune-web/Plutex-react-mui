@@ -32,7 +32,7 @@ const BuySection = () => {
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={8} lg={8}>
-              <Box className={classes.buyTitleArea}>
+              <Box className={globalClasses.text40Area}>
                 <Typography className={globalClasses.text40}>#HOW TO BUY</Typography>
               </Box>
               <Box mb={5}>

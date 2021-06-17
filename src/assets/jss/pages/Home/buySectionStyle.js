@@ -24,31 +24,6 @@ const buySectionStyle = {
     '@media (min-width: 960px)': { marginTop: '200px' },
     '@media (min-width: 1280px)': { marginTop: '237px' },
   },
-  buyTitleArea: {
-    display: 'flex',
-    marginBottom: '30px',
-    justifyContent: 'center',
-    '@media (max-width: 600px)': {
-      marginBottom: '30px',
-      justifyContent: 'center',
-    },
-    '@media (min-width: 600px)': {
-      marginBottom: '30px',
-      justifyContent: 'center',
-    },
-    '@media (min-width: 768px)': {
-      marginBottom: '33px',
-      justifyContent: 'center',
-    },
-    '@media (min-width: 960px)': {
-      marginBottom: '34px',
-      justifyContent: 'flex-start',
-    },
-    '@media (min-width: 1280px)': {
-      marginBottom: '40px',
-      justifyContent: 'flex-start',
-    },
-  },
   foxImage: {
     width: '100%',
     maxWidth: '300px',

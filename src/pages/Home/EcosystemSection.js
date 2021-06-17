@@ -25,7 +25,7 @@ const EcosystemSection = () => {
       <Box className={classes.container}>
         <Grid container display="flex" alignItems="flex-start">
           <Grid item xs={12} sm={12} md={12} lg={12}>
-            <Box className={classes.ecosystemTitleArea}>
+            <Box className={globalClasses.text40Area}>
               <Typography className={globalClasses.text40}>#ECOSYSTEM</Typography>
             </Box>
             <Box className={classes.textContentArea}>

@@ -24,6 +24,21 @@ const plutexSwapSectionStyle = {
     '@media (min-width: 960px)': { marginTop: '200px' },
     '@media (min-width: 1280px)': { marginTop: '237px' },
   },
+  textContentArea: {
+    display: 'flex',
+    position: 'relative',
+    marginBottom: '30px',
+    justifyContent: 'flex-start',
+    '@media (max-width: 600px)': { marginBottom: '30px' },
+    '@media (min-width: 600px)': { marginBottom: '35px' },
+    '@media (min-width: 768px)': { marginBottom: '40px' },
+    '@media (min-width: 960px)': { marginBottom: '45px' },
+    '@media (min-width: 1280px)': { marginBottom: '55px' },
+  },
+  imageStyle: {
+    width: 'calc(100% - 18px)',
+    margin: '9px',
+  },
 }
 
 export default plutexSwapSectionStyle
