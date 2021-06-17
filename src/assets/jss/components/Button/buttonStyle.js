@@ -28,7 +28,6 @@ const buttonStyle = {
   },
   indigoColor: {
     backgroundImage: 'linear-gradient(180deg, #333375 0.2%, #333375 100%)',
-    // backgroundColor: '#333375',
   },
 }
 

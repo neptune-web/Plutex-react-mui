@@ -1,4 +1,4 @@
-import { defaultFont } from 'assets/jss/PLUTEX'
+import { defaultFont } from 'assets/jss/constants'
 
 const headerLinksStyle = theme => ({
   list: {

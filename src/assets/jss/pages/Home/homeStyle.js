@@ -1,4 +1,4 @@
-import { container } from 'assets/jss/PLUTEX'
+import { container } from 'assets/jss/constants'
 
 import BgImage from 'assets/images/Home/bg-img.png'
 

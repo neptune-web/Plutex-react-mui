@@ -1,4 +1,4 @@
-import { container } from 'assets/jss/PLUTEX'
+import { container } from 'assets/jss/constants'
 
 import BgImage from 'assets/images/Presale/bg-img.png'
 import Stones01 from 'assets/images/Presale/Stones01.png'
@@ -56,14 +56,6 @@ const presaleStyle = {
   my50: {
     marginTop: '50px',
     marginBottom: '50px',
-  },
-  content: {
-    color: 'rgba(171, 222, 255, 1)',
-    fontFamily: 'Exo',
-    fontSize: '21px',
-    fontWeight: 400,
-    lineHeight: '33px',
-    letterSpacing: '0.44px',
   },
   icoPresaleCard: {
     position: 'relative',

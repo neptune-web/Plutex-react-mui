@@ -1,4 +1,4 @@
-import { container } from 'assets/jss/PLUTEX'
+import { container } from 'assets/jss/constants'
 
 const homeSectionStyle = {
   homeSectionArea: {

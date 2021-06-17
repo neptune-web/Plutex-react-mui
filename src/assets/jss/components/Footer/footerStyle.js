@@ -1,4 +1,4 @@
-import { containerFluid } from 'assets/jss/PLUTEX'
+import { containerFluid } from 'assets/jss/constants'
 
 const footerStyle = {
   body: {

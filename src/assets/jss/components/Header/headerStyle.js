@@ -8,7 +8,7 @@ import {
   transition,
   boxShadow,
   drawerWidth,
-} from 'assets/jss/PLUTEX'
+} from 'assets/jss/constants'
 
 const headerStyle = {
   appBar: {

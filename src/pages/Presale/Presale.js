@@ -1,7 +1,7 @@
 import React from 'react'
 
 // material ui core components
-import { Box, Grid, Hidden } from '@material-ui/core'
+import { Box, Grid, Hidden, Typography } from '@material-ui/core'
 
 // core components
 import Header from 'components/Header/Header'
@@ -18,11 +18,13 @@ import Stones02 from 'assets/images/Presale/Stones02.png'
 // styles
 import { makeStyles } from '@material-ui/core/styles'
 import styles from 'assets/jss/pages/Presale/presaleStyle'
-import { Typography } from '@material-ui/core'
+import globalStyles from 'assets/jss/PLUTEX'
 const useStyles = makeStyles(styles)
+const useGlobalStyles = makeStyles(globalStyles)
 
 const Presale = () => {
   const classes = useStyles()
+  const globalClasses = useGlobalStyles()
   return (
     <Box display="block" justifyContent="center" alignItems="flex-start">
       <Header
@@ -50,14 +52,14 @@ const Presale = () => {
               <Box display="block" justifyContent="flex-start">
                 <Typography className={classes.title}>#PLTX JUST ARRIVED</Typography>
                 <Box className={classes.mt30}>
-                  <Typography className={classes.content}>
+                  <Typography className={globalClasses.text21}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu libero enim. Etiam rutrum eu arcu ut
                     sagittis. Sed dictum lorem ex, ut eleifend sem imperdiet sit amet. Fusce tincidunt mi lacus, non
                     iaculis leo aliquam vel. Phasellus vestibulum est a nunc suscipit, a tincidunt nunc tincidunt.
                   </Typography>
                 </Box>
                 <Box className={classes.mt30}>
-                  <Typography className={classes.content}>
+                  <Typography className={globalClasses.text21}>
                     Pellentesque eget quam condimentum tortor tristique posuere. Quisque lobortis pellentesque felis, id
                     viverra nunc condimentum at. Phasellus viverra lacinia dui, a vulputate eros luctus ultricies.
                   </Typography>
