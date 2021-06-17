@@ -9,6 +9,7 @@ import HeaderLinks from 'components/Header/HeaderLinks'
 import Footer from 'components/Footer/Footer'
 import HomeSection from 'pages/Home/HomeSection'
 import EcosystemSection from 'pages/Home/EcosystemSection'
+import BuySection from 'pages/Home/BuySection'
 
 // styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -31,6 +32,7 @@ const Home = () => {
       <Box className={classes.body}>
         <HomeSection />
         <EcosystemSection />
+        <BuySection />
       </Box>
       <Footer />
     </Box>
