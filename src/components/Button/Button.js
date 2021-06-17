@@ -13,7 +13,13 @@ const PTButton = props => {
   const { title, color } = props
   const classes = useStyles()
 
-  return <Button className={color === 'yellow' ? classes.yellowButton : classes.grayButton}>{title}</Button>
+  return (
+    <React.Fragment>
+      {color === 'yellow' ? <Button className={classes.button + ' ' + classes.yellowColor}>{title}</Button> : null}
+      {color === 'gray' ? <Button className={classes.button + ' ' + classes.grayColor}>{title}</Button> : null}
+      {color === 'indigo' ? <Button className={classes.button + ' ' + classes.indigoColor}>{title}</Button> : null}
+    </React.Fragment>
+  )
 }
 
 export default PTButton
