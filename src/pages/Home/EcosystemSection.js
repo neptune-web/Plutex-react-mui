@@ -3,13 +3,12 @@ import React from 'react'
 // material ui core components
 import { Box, Grid, Typography } from '@material-ui/core'
 
-// core components
-
 // images
 import SatelliteImage from 'assets/images/Home/metagate-satelite.png'
 import Unicorn from 'assets/images/Home/Unicorn.svg'
 import FirstBurn from 'assets/images/Home/FirstBurn.svg'
 import SecondBurn from 'assets/images/Home/SecondBurn.svg'
+import YellowCircle from 'assets/images/Home/YellowCircle.svg'
 
 // styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -27,17 +26,14 @@ const EcosystemSection = () => {
               <Typography className={classes.ecosystemTitle}>#ECOSYSTEM</Typography>
             </Box>
             <Box className={classes.textContentArea}>
-              <Box className={classes.yellowPointerArea}>
-                <Box className={classes.yellowPointer}></Box>
-                <Typography className={classes.yellowText21}>PLTX</Typography>
-              </Box>
               <Typography className={classes.text21}>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; is an experiment in
-                decentralized spontaneous community building. PLTX token is our first token and allows users to hold
-                Billions or even Trillions of them. Nicknamed the DOGECOIN KILLER, this ERC-20 ONLY token can remain
-                well under a penny and still outpace Dogecoin in a small amount of time (relatively speaking). Popular
-                worldwide, and already up thousands of percent, PLTX token ($PLTX) is the first cryptocurrency token to
-                be listed and incentivized on PLTXSwap, our decentralized exchange.
+                <img src={YellowCircle} className={classes.yellowPointer} />
+                <a className={classes.text21 + ' ' + classes.yellowText}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLTX</a> is
+                an experiment in decentralized spontaneous community building. PLTX token is our first token and allows
+                users to hold Billions or even Trillions of them. Nicknamed the DOGECOIN KILLER, this ERC-20 ONLY token
+                can remain well under a penny and still outpace Dogecoin in a small amount of time (relatively
+                speaking). Popular worldwide, and already up thousands of percent, PLTX token ($PLTX) is the first
+                cryptocurrency token to be listed and incentivized on PLTXSwap, our decentralized exchange.
               </Typography>
             </Box>
           </Grid>
@@ -91,6 +87,34 @@ const EcosystemSection = () => {
                 <Box width={1} display="flex" justifyContent="center">
                   <Typography className={classes.text20}>Second burn to VB</Typography>
                 </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={12}>
+              <Box mt={10}>
+                <Typography className={classes.text21}>
+                  <img src={YellowCircle} className={classes.yellowPointer} />
+                  <a className={classes.text21 + ' ' + classes.yellowText}>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOREM IPSUM
+                  </a>{' '}
+                  was originally set to be a rebase token pegged to the price of Dogecoin. Now, it has been unleashed
+                  and will not rebase. With a total circulation of ONLY 100k tokens, it has the opposite appeal to PLTX
+                  (which has a much larger supply). The second token incentivized on the swap offers special rewards for
+                  those who provide liquidity.
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12}>
+              <Box mt={7}>
+                <Typography className={classes.text21}>
+                  <img src={YellowCircle} className={classes.yellowPointer} />
+                  <a className={classes.text21 + ' ' + classes.yellowText}>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOREM IPSUM
+                  </a>{' '}
+                  ogecoin Killer is our next token!{' '}
+                  <a className={classes.text21 + ' ' + classes.yellowText}>COMING SOON</a>, Shiba Inu Bone, takes the
+                  power of Defi to the next level. Details on how to acquire this token, tokenomics and incentives will
+                  be announced with the reveal of PLTXSwap.
+                </Typography>
               </Box>
             </Grid>
           </Grid>
