@@ -1,4 +1,5 @@
 import React from 'react'
+import { Element } from 'react-scroll'
 
 // material ui core components
 import { Box } from '@material-ui/core'
@@ -33,12 +34,24 @@ const Home = () => {
         }}
       />
       <Box className={classes.body}>
-        <HomeSection />
-        <EcosystemSection />
-        <BuySection />
-        <PlutexSwapSection />
-        <LaunchPadSection />
-        <CommunitySection />
+        <Element id="home" name="home">
+          <HomeSection />
+        </Element>
+        <Element id="ecosystem" name="ecosystem">
+          <EcosystemSection />
+        </Element>
+        <Element id="buy" name="buy">
+          <BuySection id="buy" />
+        </Element>
+        <Element id="plutexwap" name="plutexwap">
+          <PlutexSwapSection id="plutexwap" />
+        </Element>
+        <Element id="launchpad" name="launchpad">
+          <LaunchPadSection id="launchpad" />
+        </Element>
+        <Element id="community" name="community">
+          <CommunitySection id="community" />
+        </Element>
       </Box>
       <Footer />
     </Box>

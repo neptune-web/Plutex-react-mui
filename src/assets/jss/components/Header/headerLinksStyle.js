@@ -41,12 +41,15 @@ const headerLinksStyle = theme => ({
     '&:hover': {
       color: '#E97800',
     },
+    color: '#fff',
+    textDecoration: 'none',
   },
   selectedText: {
     fontFamily: 'Source Sans Pro',
     fontWeight: 500,
     fontSize: '14px',
     color: '#E97800',
+    textDecoration: 'none',
     lingHeight: '38px',
     letterSpacing: '0.26px',
     cursor: 'pointer',

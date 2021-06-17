@@ -1,5 +1,6 @@
 /*eslint-disable*/
 import React from 'react'
+import { HashLink as Link } from 'react-router-hash-link'
 
 import { useHistory } from 'react-router-dom'
 
@@ -26,7 +27,7 @@ const HeaderLinks = () => {
   // handlers
   const handleGotoNav = path => {
     setNavigation(path)
-    history.push('home')
+    history.push('/#' + path)
   }
   const handleGotoPresale = path => {
     setNavigation(path)
@@ -35,19 +36,33 @@ const HeaderLinks = () => {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem} onClick={() => handleGotoNav('ecosystem')}>
-        <Typography className={navigation === 'ecosystem' ? classes.selectedText : classes.text}>ECOSYSTEM</Typography>
+        <Link
+          to="/home#ecosystem"
+          className={navigation === 'ecosystem' ? classes.selectedText : classes.text}
+          onClick={() => handleGotoNav('ecosystem')}
+        >
+          ECOSYSTEM
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem} onClick={() => handleGotoNav('buy')}>
-        <Typography className={navigation === 'buy' ? classes.selectedText : classes.text}>BUY</Typography>
+        <Link to="/home#buy" className={navigation === 'buy' ? classes.selectedText : classes.text}>
+          BUY
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem} onClick={() => handleGotoNav('plutexwap')}>
-        <Typography className={navigation === 'plutexwap' ? classes.selectedText : classes.text}>PLUTEXWAP</Typography>
+        <Link to="/home#plutexwap" className={navigation === 'plutexwap' ? classes.selectedText : classes.text}>
+          PLUTEXWAP
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem} onClick={() => handleGotoNav('launchpad')}>
-        <Typography className={navigation === 'launchpad' ? classes.selectedText : classes.text}>LAUNCHPAD</Typography>
+        <Link to="/home#launchpad" className={navigation === 'launchpad' ? classes.selectedText : classes.text}>
+          LAUNCHPAD
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem} onClick={() => handleGotoNav('community')}>
-        <Typography className={navigation === 'community' ? classes.selectedText : classes.text}>COMMUNITY</Typography>
+        <Link to="/home#community" className={navigation === 'community' ? classes.selectedText : classes.text}>
+          COMMUNITY
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem} onClick={() => handleGotoPresale('presale')}>
         <Typography className={navigation === 'presale' ? classes.selectedText : classes.text}>PRESALE</Typography>
