@@ -30,12 +30,12 @@ const HomeSection = () => {
         <Box className={classes.content}>
           <Grid container display="flex" alignItems="center">
             <Grid item xs={12} sm={12} md={6} lg={6}>
-              <Box display="block" justifyContent="flex-start" alignItems="center" mb={3}>
+              <Box mb={3}>
                 <Typography className={classes.title}>
                   Decentralized Meme Tokens that grew into a vibrant ecosystem
                 </Typography>
               </Box>
-              <Box display="block" justifyContent="flex-start" alignItems="center" mb={3}>
+              <Box mb={3}>
                 <Typography className={classes.text31}>
                   PLTXSwap. Fun tokens. Artist incubator.
                   <br />
@@ -43,7 +43,7 @@ const HomeSection = () => {
                   <br />& more on the horizon!
                 </Typography>
               </Box>
-              <Box display="block" justifyContent="flex-start" alignItems="center" mb={3}>
+              <Box mb={3}>
                 <Button title="Read Our Woofpaper" color="yellow" />
               </Box>
             </Grid>

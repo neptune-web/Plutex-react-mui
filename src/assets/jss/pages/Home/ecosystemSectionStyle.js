@@ -3,8 +3,6 @@ import { container } from 'assets/jss/PLUTEX'
 const ecosystemSectionStyle = {
   ecosystemSectionArea: {
     width: '100%',
-    display: 'flex',
-    justifyContent: 'center',
     position: 'relative',
   },
   container: {
@@ -148,6 +146,21 @@ const ecosystemSectionStyle = {
     alignItems: 'center',
     letterSpacing: '0.65px',
     color: '#FFFFFF',
+  },
+  satelliteArea: {
+    position: 'relative',
+    width: '100%',
+  },
+  satelliteImage: {
+    position: 'absolute',
+    top: -40,
+    right: 0,
+    zIndex: 0,
+  },
+  iconStyle: {
+    width: '78px',
+    height: '78px',
+    marginBottom: '10px',
   },
 }
 

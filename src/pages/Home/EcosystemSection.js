@@ -6,6 +6,10 @@ import { Box, Grid, Typography } from '@material-ui/core'
 // core components
 
 // images
+import SatelliteImage from 'assets/images/Home/metagate-satelite.png'
+import Unicorn from 'assets/images/Home/Unicorn.svg'
+import FirstBurn from 'assets/images/Home/FirstBurn.svg'
+import SecondBurn from 'assets/images/Home/SecondBurn.svg'
 
 // styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -54,6 +58,43 @@ const EcosystemSection = () => {
             </Box>
           </Grid>
         </Grid>
+      </Box>
+      <Box className={classes.satelliteArea}>
+        <img src={SatelliteImage} className={classes.satelliteImage} />
+        <Box className={classes.container}>
+          <Grid container>
+            <Grid item xs={12} sm={12} md={4}>
+              <Box display="block" flexWrap="wrap" mt={7}>
+                <Box width={1} display="flex" justifyContent="center">
+                  <img src={Unicorn} className={classes.iconStyle} />
+                </Box>
+                <Box width={1} display="flex" justifyContent="center">
+                  <Typography className={classes.text20}>Liquidity Locked to Uniswap</Typography>
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={12} md={4}>
+              <Box display="block" flexWrap="wrap" mt={7}>
+                <Box width={1} display="flex" justifyContent="center">
+                  <img src={FirstBurn} className={classes.iconStyle} />
+                </Box>
+                <Box width={1} display="flex" justifyContent="center">
+                  <Typography className={classes.text20}>First burn to VB</Typography>
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={12} md={4}>
+              <Box display="block" flexWrap="wrap" mt={7}>
+                <Box width={1} display="flex" justifyContent="center">
+                  <img src={SecondBurn} className={classes.iconStyle} />
+                </Box>
+                <Box width={1} display="flex" justifyContent="center">
+                  <Typography className={classes.text20}>Second burn to VB</Typography>
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+        </Box>
       </Box>
     </Box>
   )
