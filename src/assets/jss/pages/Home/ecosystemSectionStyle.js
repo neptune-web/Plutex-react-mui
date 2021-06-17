@@ -128,12 +128,12 @@ const ecosystemSectionStyle = {
     borderRadius: '10px',
     marginBottom: '20px',
   },
-  leftCard: {
-    '@media (max-width: 600px)': { width: 'calc(100% - 60px)' },
-    '@media (min-width: 600px)': { width: 'calc(100% - 60px)' },
-    '@media (min-width: 768px)': { width: 'calc(100% - 60px)' },
-    '@media (min-width: 960px)': { width: 'calc(100% - 85px)' },
-    '@media (min-width: 1280px)': { width: 'calc(100% - 85px)' },
+  rightCard: {
+    '@media (max-width: 600px)': { width: 'calc(100% - 60px)', marginLeft: '0px' },
+    '@media (min-width: 600px)': { width: 'calc(100% - 60px)', marginLeft: '0px' },
+    '@media (min-width: 768px)': { width: 'calc(100% - 60px)', marginLeft: '0px' },
+    '@media (min-width: 960px)': { width: 'calc(100% - 85px)', marginLeft: '25px' },
+    '@media (min-width: 1280px)': { width: 'calc(100% - 85px)', marginLeft: '25px' },
   },
   text20: {
     fontFamily: 'Source Sans Pro',

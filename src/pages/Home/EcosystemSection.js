@@ -38,14 +38,14 @@ const EcosystemSection = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={4} lg={3}>
-            <Box className={classes.cardArea + ' ' + classes.leftCard}>
+            <Box className={classes.cardArea}>
               <Typography className={classes.text20}>
                 We locked the 50% of the total supply to Uniswap and threw away the keys!
               </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={9}>
-            <Box className={classes.cardArea}>
+            <Box className={classes.cardArea + ' ' + classes.rightCard}>
               <Typography className={classes.text20}>
                 The remaining 50% was burned to Vitalik Buterin and we were the first project following this path, so
                 everyone has to buy on the open market, ensuring a fair and complete distribution where devs don&apos;t
