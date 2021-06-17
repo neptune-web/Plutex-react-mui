@@ -12,6 +12,7 @@ import EcosystemSection from 'pages/Home/EcosystemSection'
 import BuySection from 'pages/Home/BuySection'
 import PlutexSwapSection from 'pages/Home/PlutexSwapSection'
 import LaunchPadSection from 'pages/Home/LaunchPadSection'
+import CommunitySection from 'pages/Home/CommunitySection'
 
 // styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -37,6 +38,7 @@ const Home = () => {
         <BuySection />
         <PlutexSwapSection />
         <LaunchPadSection />
+        <CommunitySection />
       </Box>
       <Footer />
     </Box>
