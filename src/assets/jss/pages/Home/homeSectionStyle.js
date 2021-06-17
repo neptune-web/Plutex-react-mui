@@ -32,39 +32,21 @@ const homeSectionStyle = {
   },
   content: {
     paddingTop: '96px',
-    '@media (min-width: 576px)': {
-      paddingBottom: '20px',
-    },
-    '@media (min-width: 768px)': {
-      paddingBottom: '60px',
-    },
-    '@media (min-width: 992px)': {
-      paddingBottom: '130px',
-    },
-    '@media (min-width: 1200px)': {
-      paddingBottom: '200px',
-    },
+    '@media (max-width: 600px)': { paddingBottom: '80px' },
+    '@media (min-width: 600px)': { paddingBottom: '80px' },
+    '@media (min-width: 768px)': { paddingBottom: '100px' },
+    '@media (min-width: 960px)': { paddingBottom: '130px' },
+    '@media (min-width: 1280px)': { paddingBottom: '160px' },
   },
   title: {
     zIndex: 1,
     fontFamily: 'Exo',
     fontWeight: 700,
-    '@media (min-width: 576px)': {
-      fontSize: '30px',
-      lineHeight: '40px',
-    },
-    '@media (min-width: 768px)': {
-      fontSize: '35px',
-      lineHeight: '50px',
-    },
-    '@media (min-width: 992px)': {
-      fontSize: '45px',
-      lineHeight: '55px',
-    },
-    '@media (min-width: 1200px)': {
-      fontSize: '50px',
-      lineHeight: '60px',
-    },
+    '@media (max-width: 600px)': { fontSize: '30px', lineHeight: '40px' },
+    '@media (min-width: 600px)': { fontSize: '30px', lineHeight: '40px' },
+    '@media (min-width: 768px)': { fontSize: '35px', lineHeight: '50px' },
+    '@media (min-width: 960px)': { fontSize: '45px', lineHeight: '55px' },
+    '@media (min-width: 1280px)': { fontSize: '50px', lineHeight: '60px' },
     display: 'flex',
     alignItems: 'center',
     letterSpacing: '1.47px',
@@ -74,22 +56,11 @@ const homeSectionStyle = {
     fontFamily: 'Source Sans Pro',
     fontStyle: 'normal',
     fontWeight: 400,
-    '@media (min-width: 576px)': {
-      fontSize: '16px',
-      lineHeight: '24px',
-    },
-    '@media (min-width: 768px)': {
-      fontSize: '20px',
-      lineHeight: '32px',
-    },
-    '@media (min-width: 992px)': {
-      fontSize: '26px',
-      lineHeight: '38px',
-    },
-    '@media (min-width: 1200px)': {
-      fontSize: '31px',
-      lineHeight: '45px',
-    },
+    '@media (max-width: 600px)': { fontSize: '16px', lineHeight: '24px' },
+    '@media (min-width: 600px)': { fontSize: '16px', lineHeight: '24px' },
+    '@media (min-width: 768px)': { fontSize: '20px', lineHeight: '32px' },
+    '@media (min-width: 960px)': { fontSize: '26px', lineHeight: '38px' },
+    '@media (min-width: 1280px)': { fontSize: '31px', lineHeight: '45px' },
     display: 'flex',
     alignItems: 'center',
     letterSpacing: '0.65px',

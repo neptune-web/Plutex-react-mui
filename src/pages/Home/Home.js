@@ -8,6 +8,7 @@ import Header from 'components/Header/Header'
 import HeaderLinks from 'components/Header/HeaderLinks'
 import Footer from 'components/Footer/Footer'
 import HomeSection from 'pages/Home/HomeSection'
+import EcosystemSection from 'pages/Home/EcosystemSection'
 
 // styles
 import { makeStyles } from '@material-ui/core/styles'
@@ -29,6 +30,7 @@ const Home = () => {
       />
       <Box className={classes.body}>
         <HomeSection />
+        <EcosystemSection />
       </Box>
       <Footer />
     </Box>
