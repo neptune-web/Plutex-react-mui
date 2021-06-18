@@ -49,7 +49,7 @@ const BuySection = () => {
                 </Typography>
               </Box>
               <Box display="flex" flexWrap="wrap" justifyContent="flex-start" alignItems="center" mb={9}>
-                <Box mr={4} mb={3}>
+                <Box mr={4} mb={1}>
                   <Typography className={globalClasses.text21 + ' ' + globalClasses.whiteText}>
                     See the Live Chart analytics:
                   </Typography>

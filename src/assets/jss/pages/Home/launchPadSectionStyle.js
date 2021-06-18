@@ -18,11 +18,11 @@ const launchPadSectionStyle = {
     ...container,
   },
   content: {
-    '@media (max-width: 600px)': { marginTop: '100px' },
-    '@media (min-width: 600px)': { marginTop: '130px' },
-    '@media (min-width: 768px)': { marginTop: '160px' },
-    '@media (min-width: 960px)': { marginTop: '200px' },
-    '@media (min-width: 1280px)': { marginTop: '237px' },
+    '@media (max-width: 600px)': { marginTop: '0px' },
+    '@media (min-width: 600px)': { marginTop: '30px' },
+    '@media (min-width: 768px)': { marginTop: '60px' },
+    '@media (min-width: 960px)': { marginTop: '100px' },
+    '@media (min-width: 1280px)': { marginTop: '137px' },
   },
   textContentArea: {
     display: 'flex',

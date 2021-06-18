@@ -32,11 +32,11 @@ const homeSectionStyle = {
   },
   content: {
     paddingTop: '96px',
-    '@media (max-width: 600px)': { paddingBottom: '80px' },
-    '@media (min-width: 600px)': { paddingBottom: '80px' },
-    '@media (min-width: 768px)': { paddingBottom: '100px' },
-    '@media (min-width: 960px)': { paddingBottom: '130px' },
-    '@media (min-width: 1280px)': { paddingBottom: '160px' },
+    '@media (max-width: 600px)': { paddingBottom: '-20px' },
+    '@media (min-width: 600px)': { paddingBottom: '-20px' },
+    '@media (min-width: 768px)': { paddingBottom: '0px' },
+    '@media (min-width: 960px)': { paddingBottom: '30px' },
+    '@media (min-width: 1280px)': { paddingBottom: '60px' },
   },
   title: {
     zIndex: 1,

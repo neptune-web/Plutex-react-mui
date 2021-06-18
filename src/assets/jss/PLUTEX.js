@@ -2,6 +2,7 @@
 
 const GlobalStyle = {
   text40Area: {
+    marginTop: '100px',
     display: 'flex',
     '@media (max-width: 600px)': {
       marginBottom: '30px',
