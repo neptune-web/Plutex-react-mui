@@ -32,8 +32,9 @@ const CommunitySection = () => {
               </Box>
               <Box className={classes.textContentArea}>
                 <Typography className={globalClasses.text21}>
-                  If you&apos;d like to donate to the Devs, send ETH, SHIB or LEASH here. Thank you for your support!
-                  WOOF!
+                  If you would like to make a donation to the growing PLUTEX community, please send your ETH or PLTX
+                  here. We are hugely grateful to everyone who supports and believes in the PLUTEX project, and we won’t
+                  forget you when we have achieved galactic domination.
                 </Typography>
               </Box>
               <Box display="flex" justifyContent="center" mb={6}>
@@ -45,12 +46,21 @@ const CommunitySection = () => {
               </Box>
               <Box className={classes.textContentArea}>
                 <Typography className={globalClasses.text21}>
-                  Our community keeps growing everyday. Please join our social platforms to get updates using the links
-                  below. There are 150k+ people in our different groups!
+                  It is early on in the PLUTEX intergalactic journey, and there are still many asteroids to avert and
+                  alien invaders to battle against. This is why we place so much value on the community that makes us
+                  who we are. Every member of the network makes an important contribution, and it is through this spirit
+                  of community-building that we will establish strength in the PLTX coin and ecosystem. PLUTEX is soon
+                  to become the next big name in the crypto universe, and we invite all adventurous space travelers to
+                  join us on our mission.
                   <br />
                   <br />
-                  You can connect with us from anywhere in the world because we have international groups for foreign
-                  language speakers.
+                  We are a growing community, and there are no limits to our galactic growth. Connect with us at any
+                  time through the social media platforms below.
+                  <br />
+                  <br />
+                  We are a global community that welcomes contributors from any corner of planet Earth, and we also
+                  strive to provide groups and support for different human languages. We have yet to develop language
+                  support for any alien languages, but we are working on this, so watch this space!
                 </Typography>
               </Box>
               <Box width={1} display="flex" justifyContent="center">

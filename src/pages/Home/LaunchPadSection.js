@@ -32,13 +32,23 @@ const LaunchPadSection = () => {
               </Box>
               <Box className={classes.textContentArea}>
                 <Typography className={globalClasses.text21}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat.
+                  In 2021, it is not easy for a coin to get noticed in the competitive universe of crypto, which is why
+                  launchpads are here to help. We know that PLUTEX is one of the shining stars that can be a source of
+                  riches for those who are ready to investigate. This&apos;s why we&apos;re planning a launchpad to
+                  connect with all space travelers who recognize true talent and give them the chance to make their bids
+                  while the costs are at their lowest.
                   <br />
                   <br />
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat non proident, sunt in mollit anim id est laborum.
+                  Take a look at the PLUTEX Launchpad so you can get here before the crowds arrive! Those who stay ahead
+                  will reap the highest rewards.
+                  <br />
+                  <br />
+                  We aim to use the funds raised at the launchpad for ongoing projects that will sustain and build on
+                  the PLUTEX ecosystem. We have many projects on the roadmap we are working towards, including a DApp,
+                  the PLTX exchange, the ROCKET token, and additional tokens that we will introduce to the ecosystem.
+                  <br />
+                  <br />
+                  There’s a whole crypto universe out there to discover and the possibilities are infinite!
                 </Typography>
               </Box>
             </Grid>
