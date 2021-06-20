@@ -39,6 +39,18 @@ const plutexSwapSectionStyle = {
     width: 'calc(100% - 18px)',
     margin: '9px',
   },
+  yellowPointerArea: {
+    position: 'absolute',
+    top: '0px',
+    display: 'flex',
+    flexWrap: 'nowrap',
+    alignItems: 'center',
+  },
+  yellowPointer: {
+    position: 'absolute',
+    top: '-2px',
+    left: '-12px',
+  },
 }
 
 export default plutexSwapSectionStyle

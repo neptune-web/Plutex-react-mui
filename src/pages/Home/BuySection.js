@@ -37,15 +37,17 @@ const BuySection = () => {
               </Box>
               <Box mb={5}>
                 <Typography className={globalClasses.text21}>
-                  The only place to buy or sell{' '}
-                  <a className={globalClasses.text21 + ' ' + globalClasses.yellowText}>PLTX</a> or{' '}
-                  <a className={globalClasses.text21 + ' ' + classes.yellowText}>LOREM IPSUM</a> safely is on Uniswap.
-                  There are some centralized exchanges that have listed SHIB, but CEXs have a history of locking funds.
-                  If you can, it is safer to trade on a decentralized exchange like Uniswap or 1inch.
+                  Right now, you can only purchase{' '}
+                  <a className={globalClasses.text21 + ' ' + globalClasses.yellowText}>PLTX</a> on the exchanges that
+                  have listed the currency. However, when the PLTXSwap is up and running in the near future, this will
+                  be the best place to make your{' '}
+                  <a className={globalClasses.text21 + ' ' + globalClasses.yellowText}>PLTX </a>
+                  purchases.
                   <br />
                   <br />
-                  <a className={globalClasses.text21 + ' ' + globalClasses.yellowText}>LOREM IPSUM</a> IS NOT AVAILABLE
-                  YET, BUT WILL BE ABLE TO ACQUIRE SOON.
+                  <a className={globalClasses.text21 + ' ' + globalClasses.yellowText}>Rocket</a> has not yet to be
+                  released, but it will be available for purchase before long. This will soon be followed by more tokens
+                  in the PLUTEX ecosystem.
                 </Typography>
               </Box>
               <Box display="flex" flexWrap="wrap" justifyContent="flex-start" alignItems="center" mb={9}>
@@ -55,6 +57,14 @@ const BuySection = () => {
                   </Typography>
                 </Box>
                 <Button title="PLTX" color="indigo" />
+              </Box>
+              <Box mb={5}>
+                <Typography className={globalClasses.text21}>
+                  At this point, there will be only a limited number of{' '}
+                  <a className={globalClasses.text21 + ' ' + globalClasses.yellowText}>PLTX</a> tokens available – 200
+                  million in total. But with the ROCKET token to follow and then more to add to the PLUTEX cosmos, this
+                  is the right intergalactic ecosystem to have on your radar.
+                </Typography>
               </Box>
               <Box mb={9} className={classes.buttonArea}>
                 <Button title="BUY PLTX" color="yellow" />

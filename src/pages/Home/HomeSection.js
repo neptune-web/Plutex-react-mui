@@ -32,15 +32,12 @@ const HomeSection = () => {
             <Grid item xs={12} sm={12} md={6} lg={6} className={classes.foxArea}>
               <Box mb={3}>
                 <Typography className={classes.title}>
-                  Decentralized Meme Tokens that grew into a vibrant ecosystem
+                  What Began as a Space-Age Meme Token Will Evolve into a Flourishing, Decentralized Ecosystem
                 </Typography>
               </Box>
               <Box mb={3}>
                 <Typography className={classes.text31}>
-                  PLTXSwap. Fun tokens. Artist incubator.
-                  <br />
-                  Growing 440k+ Community
-                  <br />& more on the horizon!
+                  From a snappy space token to a burgeoning community: PLTXSwap, DApp, and much more to follow!
                 </Typography>
               </Box>
               <Box mb={3} className={classes.buttonArea}>
