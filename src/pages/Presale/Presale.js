@@ -53,15 +53,18 @@ const Presale = () => {
                 <Typography className={classes.title}>#PLTX JUST ARRIVED</Typography>
                 <Box className={classes.mt30}>
                   <Typography className={globalClasses.text21}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu libero enim. Etiam rutrum eu arcu ut
-                    sagittis. Sed dictum lorem ex, ut eleifend sem imperdiet sit amet. Fusce tincidunt mi lacus, non
-                    iaculis leo aliquam vel. Phasellus vestibulum est a nunc suscipit, a tincidunt nunc tincidunt.
+                    The new coin from planet PLUTEX has just landed and is ready to send out some cosmic waves in the
+                    crypto world! PLTX is the new space token that is about to take the galaxy by astro-storm: a new,
+                    decentralized cryptocurrency with an ecosystem to empower each individual user. PLUTEX has a robust
+                    system of tokenomics, as well as a clear plan for cultivating interest in the brand and maintaining
+                    a high level of liquidity.
                   </Typography>
                 </Box>
                 <Box className={classes.mt30}>
                   <Typography className={globalClasses.text21}>
-                    Pellentesque eget quam condimentum tortor tristique posuere. Quisque lobortis pellentesque felis, id
-                    viverra nunc condimentum at. Phasellus viverra lacinia dui, a vulputate eros luctus ultricies.
+                    In cryptocurrency, it is all-important for investors to bank on a safe bet early on in development.
+                    PLTX is a promising space coin that is going to some out-of-this-world locations. Make sure you are
+                    down for the PLUTEX project before it takes off!
                   </Typography>
                 </Box>
                 <Box className={classes.my50}>

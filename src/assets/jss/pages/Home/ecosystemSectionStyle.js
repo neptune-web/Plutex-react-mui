@@ -58,6 +58,7 @@ const ecosystemSectionStyle = {
     alignItems: 'center',
     letterSpacing: '0.65px',
     color: '#FFFFFF',
+    textAlign: 'center',
   },
   satelliteArea: {
     position: 'relative',
